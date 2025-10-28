@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="PortfolioWebsite.html" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Your Name</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="PortfolioWebsite.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="controls">
+        <button class="theme-toggle" aria-label="Toggle color theme"><span class="thumb"></span></button>
+        <button class="hamburger" aria-label="Open navigation"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container reveal">
+      <h1 class="section-title">Skills</h1>
+      <div class="grid skills-grid">
+        <div class="card">
+          <h3 class="card-title">Frontend</h3>
+          <div class="skill"><span>HTML</span><div class="bar"><span style="--value: 50%"></span></div></div>
+          <div class="skill"><span>CSS</span><div class="bar"><span style="--value: 28%"></span></div></div>
+          <div class="skill"><span>JavaScript</span><div class="bar"><span style="--value: 30%"></span></div></div>
+          <div class="skill"><span>Accessibility</span><div class="bar"><span style="--value: 80%"></span></div></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Tools</h3>
+          <div class="skill"><span>Git</span><div class="bar"><span style="--value: 60%"></span></div></div>
+          <div class="skill"><span>Webpack/Vite</span><div class="bar"><span style="--value: 50%"></span></div></div>
+          <div class="skill"><span>Testing</span><div class="bar"><span style="--value: 65%"></span></div></div>
+          <div class="skill"><span>Design Systems</span><div class="bar"><span style="--value: 65%"></span></div></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Other</h3>
+          <div class="skill"><span>Python</span><div class="bar"><span style="--value: 70%"></span></div></div>
+          <div class="skill"><span>Node.js</span><div class="bar"><span style="--value: 50%"></span></div></div>
+          <div class="skill"><span>SQL</span><div class="bar"><span style="--value: 55%"></span></div></div>
+          <div class="skill"><span>CI/CD</span><div class="bar"><span style="--value: 40%"></span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> Gavin Wineburgh</div>
+      <div>
+        <a class="muted" href="mailto:you@example.com">gmw@njit.edu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>
+
+

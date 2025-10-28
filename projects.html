@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="PortfolioWebsite.html" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Gavin Wineburgh</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="PortfolioWebsite.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="controls">
+        <button class="theme-toggle" aria-label="Toggle color theme"><span class="thumb"></span></button>
+        <button class="hamburger" aria-label="Open navigation"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container reveal">
+      <h1 class="section-title">Projects</h1>
+      <div class="grid projects-grid">
+        <article class="card">
+          <img src="assets/img/My Portfolio 2025-10-23.png" alt="Project 1 preview" />
+          <h3 class="card-title">Project One</h3>
+          <p class="card-meta">Responsive online portfolio with accessible components and smooth interactions.</p>
+          <div style="margin-top: 10px; display: flex; gap: 10px;">
+            <a class="btn" href="#" aria-disabled="true">Live</a>
+            <a class="btn ghost" href="#" aria-disabled="true">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/Gear-Powered-Cart.jpg" alt="Project 2 preview" />
+          <h3 class="card-title">Project Two</h3>
+          <p class="card-meta">A laser cut gear powered racing car with a simple circuit.</p>
+          <div style="margin-top: 10px; display: flex; gap: 10px;">
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/Fan-Powered-Cart.jpg" alt="Project 3 preview" />
+          <h3 class="card-title">Project Three</h3>
+          <p class="card-meta">A laser cut and engraved wooden cart powered by a fan attached to a motor.</p>
+          <div style="margin-top: 10px; display: flex; gap: 10px;">
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> Gavin Wineburgh</div>
+      <div>
+        <a class="muted" href="mailto:gmw@njit.edu">gmw@njit.edu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>
+
+

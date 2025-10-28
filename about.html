@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="PortfolioWebsite.html" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Gavin Wineburgh</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="PortfolioWebsite.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="controls">
+        <button class="theme-toggle" aria-label="Toggle color theme"><span class="thumb"></span></button>
+        <button class="hamburger" aria-label="Open navigation"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container reveal">
+      <h1 class="section-title">About Me</h1>
+      <div class="grid" style="grid-template-columns: 1fr; gap: 24px;">
+        <div class="card">
+          <p>Hello! I’m an Electrical/Computer Engineering Technology student who enjoys programming, designing components, and thoughtful user experiences. I focus on clarity and maintainability. The way I got into all this stuff is because my father and siblings have used devices and made things that also got me interested. </p>
+          <p class="muted">Outside of coding, I enjoy learning, designing physical projects, and tinkering with tools. My grandfather is one of a dozen music box restorers left which made me want to learn about the hands-on making process. </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Highlights</h3>
+          <ul>
+            <li>Mobile-first, responsive design</li>
+            <li>Semantic HTML and accessible interactions</li>
+            <li>CSS architecture with custom properties</li>
+            <li>Vanilla JS for interactivity and performance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> Gavin Wineburgh</div>
+      <div>
+        <a class="muted" href="mailto:gmw@njit.edu">gmw@njit.edu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>

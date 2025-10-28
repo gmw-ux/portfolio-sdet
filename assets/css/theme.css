@@ -1,0 +1,22 @@
+/* Light/Dark theme tokens */
+:root {
+  color-scheme: dark light;
+  --bg: #0b0f14;
+  --text: #e6edf3;
+  --muted-text: #9aa7b2;
+  --card: #0f172a;
+  --border: #1f2a3a;
+  --accent: #60a5fa;
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted-text: #475569;
+  --card: #f5f7fb;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+}
+
+body { background: var(--bg); color: var(--text); }
+

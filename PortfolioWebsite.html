@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="PortfolioWebsite.html" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Gavin Wineburgh</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="PortfolioWebsite.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="controls">
+        <button class="theme-toggle" aria-label="Toggle color theme"><span class="thumb"></span></button>
+        <button class="hamburger" aria-label="Open navigation"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container reveal">
+      <h1 class="title">Hi, I’m Gavin</h1>
+      <p class="subtitle">Electrical/Computer Engineering Technology student at NJIT.</p>
+      <div class="cta">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="contact.html" class="btn secondary">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="card" style="text-align: center; max-width: 400px; margin: 0 auto;">
+        <img src="assets/img/photoOfMe.jpg" alt="Gavin Wineburgh" style="width: 100%; border-radius: 12px; margin-bottom: 16px;" />
+        <h3 class="card-title">Gavin Wineburgh</h3>
+        <p class="card-meta">Electrical/Computer Engineering Technology Student at NJIT</p>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <h2 class="section-title">Featured Highlights</h2>
+      <div class="grid" style="grid-template-columns: 1fr;">
+        <div class="card">
+          <h3 class="card-title">Responsive by default</h3>
+          <p class="card-meta">Fluid layouts, accessible interactions, and mobile-first design.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Clean, maintainable code</h3>
+          <p class="card-meta">Componentized CSS and progressive enhancement in vanilla JS.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Performance aware</h3>
+          <p class="card-meta">Lightweight, fast-loading pages with reduced motion support.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> Gavin Wineburgh</div>
+      <div>
+        <a class="muted" href="mailto:gmw@njit.edu">gmw@njit.edu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>
